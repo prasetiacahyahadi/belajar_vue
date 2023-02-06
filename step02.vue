@@ -4,7 +4,10 @@ export default {
   // declare some reactive state here.
   data(){
     return {
-      message : 'Hello world !'
+      message : 'Hello world !',
+      counter: {
+        count:0
+      }
     }
   }
 }
@@ -12,4 +15,5 @@ export default {
 
 <template>
   <h1>{{message}}</h1>
+  <p>Count is: {{ counter.count }}</p>
 </template>
